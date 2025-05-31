@@ -163,3 +163,49 @@
   height: 32px;
   border-radius: 16px;
 }
+@media (max-width: 768px) {
+  .middle-section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .search-bar {
+    font-size: 14px;
+  }
+
+  .search-button {
+    width: 50px;
+    height: 36px;
+    margin-left: -36px;
+    margin-right: 5px;
+  }
+
+  .right-section {
+    width: auto;
+    gap: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .middle-section {
+    display: none; /* hide search bar for tiny screens */
+  }
+
+  .right-section {
+    justify-content: flex-end;
+    gap: 8px;
+    margin-right: 10px;
+  }
+
+  .upload-icon-container,
+  .youtube-apps-icon-container,
+  .notifications-icon-container {
+    display: none; /* Hide icons to save space */
+  }
+
+  .hamburger-menu {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
